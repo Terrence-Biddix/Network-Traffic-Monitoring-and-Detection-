@@ -1,32 +1,32 @@
 # Network-Traffic-Monitoring-and-Detection-
 
 Capture and Filter Network Traffic in a Linux Environment
-Objective
+## Objective
 
 The purpose of this project was to gain hands-on experience capturing and analyzing live network traffic in a Linux environment. Using the tcpdump utility, I learned how to identify network interfaces, capture packets, apply filters, and interpret packet details. This exercise simulated real-world analyst tasks where packet inspection is critical for network monitoring, incident response, and troubleshooting.
 
-Skills Learned
+### Skills Learned
 
-Proficiency in using tcpdump for live traffic capture and analysis.
+- Proficiency in using tcpdump for live traffic capture and analysis.
 
-Ability to identify and analyze properties of network interfaces.
+- Ability to identify and analyze properties of network interfaces.
 
-Understanding how to filter traffic by protocol, port, and packet type.
+- Understanding how to filter traffic by protocol, port, and packet type.
 
-Familiarity with interpreting packet metadata such as source/destination, flags, checksums, and payloads.
+- Familiarity with interpreting packet metadata such as source/destination, flags, checksums, and payloads.
 
-Experience saving, reloading, and analyzing .pcap files for forensic review.
+- Experience saving, reloading, and analyzing .pcap files for forensic review.
 
-Tools Used
+### Tools Used
 
-Linux Terminal – environment for executing commands.
+- Linux Terminal – environment for executing commands.
 
-tcpdump – command-line utility for network packet capture and filtering.
+- tcpdump – command-line utility for network packet capture and filtering.
 
-curl – used to generate HTTP traffic for capture.
+- curl – used to generate HTTP traffic for capture.
 
-Steps
-Ref 1: Identify Network Interfaces
+## Steps
+*Ref 1: Identify Network Interfaces*
 
 Command:
 
@@ -44,7 +44,7 @@ Shows available interfaces (eth0, lo).
 
 eth0 identified as the main interface for packet capture.
 
-Ref 2: Inspect Live Traffic with tcpdump
+*Ref 2: Inspect Live Traffic with tcpdump*
 
 Command:
 
@@ -59,7 +59,7 @@ Output includes timestamps, IP addresses, protocol, TCP flags, sequence numbers,
 
 Demonstrates filtering live traffic directly from the network interface.
 
-Ref 3: Capture Network Traffic to a File
+*Ref 3: Capture Network Traffic to a File*
 
 Command:
 
@@ -79,7 +79,7 @@ Used curl opensource.google.com to generate web traffic.
 
 Verified that the capture.pcap file was successfully saved.
 
-Ref 4: Filter Captured Packet Data
+*Ref 4: Filter Captured Packet Data*
 
 Command:
 
@@ -111,7 +111,7 @@ Provides deeper visibility into packet payloads.
 
 Useful for detecting anomalies, signatures, or malicious content.
 
-Conclusion
+## Conclusion
 
 This project provided practical experience in capturing and filtering live network traffic using tcpdump. I learned how to:
 
