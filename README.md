@@ -26,7 +26,7 @@ The purpose of this project was to gain hands-on experience capturing and analyz
 - curl – used to generate HTTP traffic for capture.
 
 ## Steps
-*Ref 1: Identify Network Interfaces*
+*Ref 1️⃣: Identify Network Interfaces*
 
 Command:
 
@@ -44,7 +44,8 @@ Shows available interfaces (eth0, lo).
 
 eth0 identified as the main interface for packet capture.
 
-*Ref 2: Inspect Live Traffic with tcpdump*
+
+*Ref 2️⃣: Inspect Live Traffic with tcpdump*
 
 Command:
 
@@ -59,7 +60,8 @@ Output includes timestamps, IP addresses, protocol, TCP flags, sequence numbers,
 
 Demonstrates filtering live traffic directly from the network interface.
 
-*Ref 3: Capture Network Traffic to a File*
+
+*Ref 3️⃣: Capture Network Traffic to a File*
 
 Command:
 
@@ -79,7 +81,8 @@ Used curl opensource.google.com to generate web traffic.
 
 Verified that the capture.pcap file was successfully saved.
 
-*Ref 4: Filter Captured Packet Data*
+
+*Ref 4️⃣: Filter Captured Packet Data*
 
 Command:
 
@@ -94,6 +97,7 @@ sudo tcpdump -nn -r capture.pcap -v
 
 Displays details such as source/destination IPs, ports, TCP flags, and packet lengths.
 
+*Ref 5️⃣: *
 Command:
 
 sudo tcpdump -nn -r capture.pcap -X
@@ -113,14 +117,4 @@ Useful for detecting anomalies, signatures, or malicious content.
 
 ## Conclusion
 
-This project provided practical experience in capturing and filtering live network traffic using tcpdump. I learned how to:
-
-Identify and monitor active network interfaces.
-
-Capture and analyze packets in real time.
-
-Apply filters to focus on specific protocols and ports.
-
-Save and analyze packet captures offline for forensic investigation.
-
-These skills are directly applicable to roles in network security, incident response, and threat hunting.
+This project provided practical experience in capturing and filtering live network traffic using tcpdump. I learned how to identify and monitor active network interfaces. Capture and analyze packets in real time. Apply filters to focus on specific protocols and ports. Save and analyze packet captures offline for forensic investigation. These skills are directly applicable to roles in network security, incident response, and threat hunting.
