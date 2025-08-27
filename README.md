@@ -26,7 +26,7 @@ The purpose of this project was to gain hands-on experience capturing and analyz
 - curl – used to generate HTTP traffic for capture.
 
 ## Steps
-*Ref 1️⃣: Identify Network Interfaces*
+#### *Ref 1️⃣: Identify Network Interfaces*
 
 Command:
 
@@ -45,7 +45,7 @@ Shows available interfaces (eth0, lo).
 eth0 identified as the main interface for packet capture.
 
 
-*Ref 2️⃣: Inspect Live Traffic with tcpdump*
+#### *Ref 2️⃣: Inspect Live Traffic with tcpdump*
 
 Command:
 
@@ -61,7 +61,7 @@ Output includes timestamps, IP addresses, protocol, TCP flags, sequence numbers,
 Demonstrates filtering live traffic directly from the network interface.
 
 
-*Ref 3️⃣: Capture Network Traffic to a File*
+#### *Ref 3️⃣: Capture Network Traffic to a File*
 
 Command:
 
@@ -82,7 +82,7 @@ Used curl opensource.google.com to generate web traffic.
 Verified that the capture.pcap file was successfully saved.
 
 
-*Ref 4️⃣: Filter Captured Packet Data*
+#### *Ref 4️⃣: Filter Captured Packet Data*
 
 Command:
 
@@ -97,7 +97,7 @@ sudo tcpdump -nn -r capture.pcap -v
 
 Displays details such as source/destination IPs, ports, TCP flags, and packet lengths.
 
-*Ref 5️⃣: *
+#### *Ref 5️⃣: *
 Command:
 
 sudo tcpdump -nn -r capture.pcap -X
